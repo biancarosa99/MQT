@@ -1,0 +1,30 @@
+#se poate folosi docker-compose-ul din L2, cel cu 1 broker
+#we can use docker-compose file from Mosule2 
+1. Create topics
+
+Create  topic events1 with 1 replication factor and 3 partitions.
+Create  topic events2 with 1 replication factor and 4 partitions.
+
+2. List all topics 
+
+3. Describe topic 
+
+4. Create a console producer foe topic event1. 
+3. Read the data - create 2 consumers for event1. Show partition number and offset. 
+
+4. Send data. Use your Producer API
+SimpleExampleProducer
+SynchronousSimpleProducer
+AsynchronousSimpleProducer
+ExampleProducer --> add arg[0] parameter
+create group of Consumers 
+
+5. Run with specifying consumer group and printing the partition
+- from-beginning
+-latest
+
+Check that messages with the same key go to the same partition. Notice, that messages may come in a different order, when they are in different partitions.
+
+6. Delete topic
+
+

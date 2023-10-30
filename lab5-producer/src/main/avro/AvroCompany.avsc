@@ -1,0 +1,15 @@
+{
+  "namespace": "module4",
+  "type": "record",
+  "name": "AvroCompany",
+  "fields": [
+    {
+      "name": "tradeNumber",
+      "type": "int"
+    },
+    {
+      "name": "registeredName",
+      "type": "string"
+    }
+  ]
+}

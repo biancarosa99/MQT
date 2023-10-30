@@ -1,0 +1,23 @@
+La sfarsitul laboratorului 3 veti dobandi urmatoarele cunostinte:
+- crearea unui proiect in IntelliJ, folosind gradle.
+- adaugarea de dependinte in fisierul build.gradle pentru clientii de Kafka si sistemul de logging
+
+- prezentarea claselor Java din pachetul 'kafka-clients', necesare implementarii unui Producator API: 
+interfata Producer si clasa KafkaProducer care implementeaza interfata Producer
+clasele de configurare: ProducerConfig si Properties
+clasa ProducerRecord care modeleaza evenimentul publicat pe topic-ul de Kafka
+clasa RecordMetadata care reprezinta confirmarea publicarii cu succes/sau nu a evenimentului pe topic. Aceasta clasa contine detalii despre partitia si offset-ul evenimentului publicat
+
+- crearea din consola a unui producator(terminal kafka sa folosind docker exec)
+- crearea unui consumator pentru acel topic si consumarea evenimentelor de pe topic
+- publicarea de evenimente pe topic, atat din API Java Producer, cat si din producatorul creat din consola
+
+- publicarea de evenimente pe topic din API Java Producer, folosind cheia si observarea persistarii lor pe aceeasi partitie
+
+- Folosirea publicarii sincrone si asincrone (metoda send) in clasa Java Producator
+
+- Generarea random a unor mesaje si publicarea repetitiva a lor pe topic. Se poate folosi interfata ScheduledExecutorService si un singur thread.
+
+- Realizati o metoda care primeste numele topic-ului ca si argument din linia de comanda. 
+
+
